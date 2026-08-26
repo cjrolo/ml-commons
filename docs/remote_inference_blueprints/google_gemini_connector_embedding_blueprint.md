@@ -1,6 +1,8 @@
 # Google Gemini Connector Blueprint for Embedding
 
-This blueprint connects a Google Gemini text embedding model to your OpenSearch cluster using the [Gemini embedContent API](https://ai.google.dev/api/embeddings). You will need a Gemini API key from [Google AI Studio](https://aistudio.google.com/apikey).
+This blueprint connects a Google Gemini text embedding model to your OpenSearch cluster using the [Gemini embedContent API](https://ai.google.dev/api/embeddings) (`generativelanguage.googleapis.com`) with an API key from [Google AI Studio](https://aistudio.google.com/apikey).
+
+For GCP Vertex AI embeddings (`text-embedding-004` on `*-aiplatform.googleapis.com` with the `google_cloud` protocol), use the [Vertex AI embedding blueprint](gcp_vertexai_embedding_blueprint.md) instead. That path uses a service account or ADC, not a Gemini API key.
 
 ## 1. Add connector endpoint to trusted URLs
 
